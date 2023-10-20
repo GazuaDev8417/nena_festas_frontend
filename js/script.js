@@ -1,12 +1,17 @@
-let menu = document.querySelector('#menu-bars')
-let navbar = document.querySelector('.navbar')
-let form = document.querySelector('#form')
+//Header variables
+const menu = document.querySelector('#menu-bars')
+const navbar = document.querySelector('.navbar')
+//Form variables
+const form = document.querySelector('#form')
 let client = document.querySelector('#client')
 let email = document.querySelector('#email')
 let phone = document.querySelector('#phone')
 let subject = document.querySelector('#subject')
 let message = document.querySelector('#message')
-let birthdays = document.querySelector('#birthdays')
+//Gallery section variables
+const gallerySection = document.getElementById('gallery')
+let boxElements = gallerySection.getElementsByClassName('box')
+
 
 
 
@@ -46,9 +51,14 @@ var swiper = new Swiper(".home-slider", {
 //its ends
 
 //Navigate to the gallery of albums
-const goToAlbumsPage = (page)=>{
- 
-}
+const boxArray = Array.from(boxElements)
+
+boxArray.forEach((box, index)=>{
+  box.addEventListener('click', ()=>{
+    location.href = `albums.html#${box.id}`
+  })
+})
+
 
 //Function to reset form when it submit
   const clearForm = ()=>{
