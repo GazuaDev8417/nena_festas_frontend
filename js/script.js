@@ -11,6 +11,7 @@ let message = document.querySelector('#message')
 //Gallery section variables
 const gallerySection = document.getElementById('gallery')
 let boxElements = gallerySection.getElementsByClassName('box')
+const boxArray = Array.from(boxElements)
 
 
 
@@ -19,11 +20,19 @@ let boxElements = gallerySection.getElementsByClassName('box')
 menu.onclick = ()=>{
     menu.classList.toggle('fa-times')
     navbar.classList.toggle('active')
+
+    boxArray.forEach(box=>{
+      box.classList.add('showLinks')
+    })
 }
 
 window.onscroll = ()=>{
     menu.classList.remove('fa-times')
     navbar.classList.remove('active')
+
+    boxArray.forEach(box=>{
+      box.classList.remove('showLinks')
+    })
 }
 //its ends
 
@@ -50,9 +59,7 @@ var swiper = new Swiper(".home-slider", {
 //its ends
 
 //Navigate to the gallery of albums
-const boxArray = Array.from(boxElements)
-
-boxArray.forEach((box, index)=>{
+boxArray.forEach((box)=>{
   box.addEventListener('click', ()=>{
     location.href = `albums.html#${box.id}`
   })
