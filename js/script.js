@@ -6,11 +6,11 @@ let email = document.querySelector('#email')
 let phone = document.querySelector('#phone')
 let subject = document.querySelector('#subject')
 let message = document.querySelector('#message')
+let birthdays = document.querySelector('#birthdays')
 
 
 
-
-
+//Menu icons to responsive size of screen
 menu.onclick = ()=>{
     menu.classList.toggle('fa-times')
     navbar.classList.toggle('active')
@@ -21,7 +21,9 @@ window.onscroll = ()=>{
     navbar.classList.remove('active')
 }
 
+//its ends
 
+//Swiper to slide pictures
 var swiper = new Swiper(".home-slider", {
     effect: "coverflow",
     grabCursor: true,
@@ -41,7 +43,14 @@ var swiper = new Swiper(".home-slider", {
     }
   })
 
+//its ends
 
+//Navigate to the gallery of albums
+const goToAlbumsPage = (page)=>{
+ 
+}
+
+//Function to reset form when it submit
   const clearForm = ()=>{
     client.value = '',
     email.value = '',
@@ -50,7 +59,7 @@ var swiper = new Swiper(".home-slider", {
     message.value = ''
   }
 
-
+//Request when form submition
   form.addEventListener('submit', async(e)=>{
     e.preventDefault()
     try{
