@@ -136,6 +136,43 @@ section{
     width: 35rem;
 }
 
+
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5;
+}
+
+.home .row .image{
+    flex: 1 1 45rem;
+    padding: 1rem;
+}
+
+.home .row .image img{
+    width: 100%;
+    border-radius: .5rem;
+    border: 1rem solid #333;
+}
+
+.home .row .content{
+    flex: 1 1 45rem;
+    margin-left: 15px;
+}
+
+.home .row .content h3{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.home .row .content p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+
 .home .home-slider .swiper-slide img{
     height: 100%;
     width: 100%;
@@ -175,41 +212,6 @@ section{
     font-size: 1.4rem;
     color: #eee;
     line-height: 1.8;
-}
-
-.about .row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5;
-}
-
-.about .row .image{
-    flex: 1 1 45rem;
-    padding: 1rem;
-}
-
-.about .row .image img{
-    width: 100%;
-    border-radius: .5rem;
-    border: 1rem solid #333;
-}
-
-.about .row .content{
-    flex: 1 1 45rem;
-    margin-left: 15px;
-}
-
-.about .row .content h3{
-    font-size: 3.5rem;
-    color: #fff;
-}
-
-.about .row .content p{
-    font-size: 1.5rem;
-    color: #eee;
-    padding: 1rem 0;
-    line-height: 2;
 }
 
 .gallery .box-container{
@@ -351,7 +353,6 @@ section{
 .contact form .inputBox input::placeholder,
 .contact form textarea::placeholder{
     color: #eee;
-    text-transform: capitalize;
 }
 
 .contact form .inputBox input:focus,
