@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><span>Nena</span> Festas</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="albums.html">Galeria</a>
+        </nav>
+        <div id="menu-bars" class="fas fa-bars"></div>
+    </header>
+    <section class="home contact" id="birthdays">
+        <div class="content">
+            <div class="legend">
+                Aqui você irá informar os detalhes do seu evento para te darmos um orçamento.
+                Informe também suas dúvidas com relação ao que quer que seja,
+                pois entraremos em contato para esclarecê-las afim de nos adequarmos
+                ao máximo às suas condições.
+            </div>            
+        </div>
+        <form id="form">
+            <div class="inputBox">
+                <input type="text" id="client" placeholder="Nome" maxlength="20" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+            </div>
+            <div class="inputBox">
+                <input maxlength="11" 
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" 
+                    type="text" id="phone" placeholder="Número" required>
+                <input type="text" id="subject" placeholder="Tipo do evento" maxlength="20" required>
+            </div>
+            <textarea name="" placeholder="Sua mensagem" 
+                id="message" cols="30" rows="10" required></textarea>
+            <input type="reset" value="Limpar" class="btn">
+            <input type="submit" value="Enviar" class="btn">
+        </form>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Atalhos da página</h3>
+                <a href="#birthdays"><i class="fa-solid fa-cake-candles"></i>Aniversários</a>
+                <a href="#weddings"><i class="fa-solid fa-ring"></i>Casamentos</a>
+                <a href="#debutante"><i class="fa-solid fa-child-dress"></i>15 Anos</a>
+                <a href="#graduation"><i class="fa-solid fa-graduation-cap"></i>Formaturas</a>
+            </div>
+            <div class="box">
+                <h3>Contato</h3>
+                <a href='https://api.whatsapp.com/send?phone=5571988500067'
+                target='_blank'><i class="fas fa-phone"></i>(71) 98850-0067</a>
+                <a href="mailto:recipient@example.com?subject=Your%20Subject&body=Your%20Message"><i class="fas fa-envelope"></i>vaniresnovais@gmail.com</a>
+            </div>
+            <div class="box">
+                <h3>Siga-me</h3>
+                <a href="https://www.facebook.com/profile.php?id=100030703285868" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>Facebook</a>
+                <a href="https://www.instagram.com/nenafestaseventos/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>Instagram</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>

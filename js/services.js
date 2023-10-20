@@ -8,10 +8,6 @@ let email = document.querySelector('#email')
 let phone = document.querySelector('#phone')
 let subject = document.querySelector('#subject')
 let message = document.querySelector('#message')
-//Gallery section variables
-const gallerySection = document.getElementById('gallery')
-let boxElements = gallerySection.getElementsByClassName('box')
-
 
 
 
@@ -25,42 +21,10 @@ window.onscroll = ()=>{
     menu.classList.remove('fa-times')
     navbar.classList.remove('active')
 }
-//its ends
-
-//Swiper to slide pictures
-var swiper = new Swiper(".home-slider", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 2,
-      slideShadows: true,
-    },
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false
-    }
-  })
-
-//its ends
-
-//Navigate to the gallery of albums
-const boxArray = Array.from(boxElements)
-
-boxArray.forEach((box, index)=>{
-  box.addEventListener('click', ()=>{
-    location.href = `albums.html#${box.id}`
-  })
-})
 
 
 //Function to reset form when it submit
-  const clearForm = ()=>{
+const clearForm = ()=>{
     client.value = '',
     email.value = '',
     phone.value = '',
@@ -77,7 +41,7 @@ boxArray.forEach((box, index)=>{
         email: email.value,
         phone: Number(phone.value),
         subject: subject.value,
-        message: message.value
+        message: `Mensagem enviada para fazer orçamento - ${message.value}`
       }
       const res = await fetch('https://nena-festas.vercel.app/message', {
         method:'POST',
@@ -86,8 +50,8 @@ boxArray.forEach((box, index)=>{
       })
 
       if(!res.ok){
-        /* const failed = await res.text()
-        return alert(`Falha ao enviar: ${failed}`) */
+        const failed = await res.text()
+        return alert(`Falha ao enviar: ${failed}`)
         return alert('Falha ao enviar')
       }
 
