@@ -1,0 +1,22 @@
+2. Arquivo robots.txt:
+
+O arquivo robots.txt é usado para controlar quais partes do seu site os mecanismos de busca podem ou não rastrear. Aqui estão os passos para criar um arquivo robots.txt:
+
+Crie um arquivo de texto: Use qualquer editor de texto simples, como o Bloco de Notas no Windows ou o TextEdit no Mac, para criar um arquivo chamado "robots.txt".
+
+Estruture o arquivo: O arquivo robots.txt consiste em diretivas que informam aos mecanismos de busca o que eles podem rastrear ou não. Por exemplo, para permitir que todos os mecanismos de busca rastreiem todo o site, você pode usar:
+
+makefile
+Copy code
+User-agent: *
+Disallow:
+Carregue o arquivo no servidor: Após criar o arquivo robots.txt, você precisa carregá-lo na raiz do seu site, assim como o sitemap XML.
+
+Teste o arquivo robots.txt: Verifique se o arquivo robots.txt está funcionando corretamente usando a ferramenta "Teste de robots.txt" no Google Search Console. Isso ajudará a identificar erros ou problemas.
+
+Lembre-se de que o arquivo robots.txt é uma diretriz para os mecanismos de busca, mas não impede que usuários acessem diretamente URLs que estejam listadas como "Disallow". Certifique-se de entender como funcionam esses arquivos antes de implementá-los.
+
+
+
+
+

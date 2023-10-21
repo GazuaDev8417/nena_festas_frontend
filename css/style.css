@@ -40,7 +40,7 @@ body{
 }
 
 section{
-    padding: 2rem 9%    ;
+    padding: 2rem 9%;
 }
 
 .heading{
@@ -150,13 +150,13 @@ section{
 }
 
 .home .row .image img{
-    width: 100%;
+    width: 85%;
     border-radius: .5rem;
     border: 1rem solid #333;
 }
 
 .home .row .content{
-    flex: 1 1 45rem;
+    flex: 1 1 50rem;
     margin-left: 15px;
 }
 
@@ -216,7 +216,7 @@ section{
 
 .gallery .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -350,6 +350,7 @@ section{
 
 .footer{
     background: #111;
+    padding: 2rem 9%;
 }
 
 .footer .box-container{
@@ -393,6 +394,10 @@ section{
     }
 
     section{
+        padding: 2rem;
+    }
+
+    footer{
         padding: 2rem;
     }
 }
