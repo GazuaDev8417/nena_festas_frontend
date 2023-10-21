@@ -16,7 +16,7 @@ const boxArray = Array.from(boxElements)
 
 
 
-//Menu icons to responsive size of screen
+//Responsive menu size of screen
 menu.onclick = ()=>{
     menu.classList.toggle('fa-times')
     navbar.classList.toggle('active')
