@@ -45,7 +45,7 @@
     }
 }
 
-@media(max-width: 550px){
+/* @media(max-width: 550px){
     .header{
         display: flex;
         flex-direction: column;
@@ -56,4 +56,4 @@
     #menu-bars{
         display: none;
     }
-}
+} */

@@ -82,6 +82,7 @@ section{
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 9%;
+    z-index: 2;
 }
 
 .header .logo{
@@ -203,10 +204,6 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
-}
-
-.showLinks{
-    display: none;
 }
 
 .gallery .box-container .box{
