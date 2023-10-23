@@ -20,24 +20,16 @@ const boxArray = Array.from(boxElements)
 menu.onclick = ()=>{
     menu.classList.toggle('fa-times')
     navbar.classList.toggle('active')
-
-    boxArray.forEach(box=>{
-      box.classList.add('showLinks')
-    })
 }
 
 window.onscroll = ()=>{
     menu.classList.remove('fa-times')
     navbar.classList.remove('active')
-
-    boxArray.forEach(box=>{
-      box.classList.remove('showLinks')
-    })
 }
 //its ends
 
 //Swiper to slide pictures
-var swiper = new Swiper(".home-slider", {
+/* var swiper = new Swiper(".home-slider", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -54,7 +46,7 @@ var swiper = new Swiper(".home-slider", {
         delay: 3000,
         disableOnInteraction: false
     }
-  })
+  }) */
 
 //its ends
 
