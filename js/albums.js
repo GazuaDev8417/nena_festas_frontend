@@ -1,5 +1,4 @@
 
-
 var swiper = new Swiper(".home-slider", {
     effect: "coverflow",
     grabCursor: true,
