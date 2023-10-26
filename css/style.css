@@ -381,6 +381,14 @@ section{
     transform: scale(.8);
 }
 
+.footer a div{
+    transition: 2s;
+}
+
+.footer a:hover div{
+    transform: scale(0);
+}
+
 
 /* Media Queries */
 @media(max-width: 991px){
