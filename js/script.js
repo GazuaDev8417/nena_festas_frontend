@@ -68,7 +68,7 @@ boxArray.forEach((box)=>{
   }
 
 //Request when form submition
-  form.addEventListener('submit', async(e)=>{
+  /* form.addEventListener('submit', async(e)=>{
     e.preventDefault()
     try{
       const body = {
@@ -85,8 +85,6 @@ boxArray.forEach((box)=>{
       })
 
       if(!res.ok){
-        /* const failed = await res.text()
-        return alert(`Falha ao enviar: ${failed}`) */
         return alert('Falha ao enviar')
       }
 
@@ -96,4 +94,4 @@ boxArray.forEach((box)=>{
     }catch(e){
       alert(e.message) 
     }
-  })
+  }) */
