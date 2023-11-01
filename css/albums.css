@@ -11,8 +11,8 @@
 .home .home-slider .swiper-slide{
     overflow: hidden;
     border-radius: .5rem;
-    height: 50rem;
-    width: 35rem;
+    height: 60rem;
+    width: 45rem;    
 }
 
 .home .home-slider .swiper-slide img{
@@ -26,11 +26,61 @@
     margin: 10px;
 }
 
-.clicked{
-    transform: scale(1.5);
+.bottom{
+    background: #111;
+    padding: 2rem 9%;
+    margin-left: -12%;
+    margin-bottom: -5%;
+    width: 100vw;
 }
 
+.bottom .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.bottom .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.bottom .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.bottom .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--main-color);
+}
+
+.bottom .box-container .box a:hover i{
+    padding-right: 1.5rem;
+    color: #fff;
+}
+
+.bottom a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 10pt;
+}
+
+
 /* Media queries */
+@media(max-width: 990px){
+    .bottom{
+        margin-left: -5%;
+        margin-bottom: -5%;
+        width: 105vw;
+    }
+}
+
 @media(max-width: 500px){
     .btnContainer{
         margin: auto;

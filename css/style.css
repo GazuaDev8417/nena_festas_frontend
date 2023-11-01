@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+
 
 :root{
     --main-color: #3867d6;
 }
 
 *{
-    font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,6 +17,7 @@
 }
 
 html{
+    font-family: 'Nunito', sans-serif;
     font-size: 62.5%;
     overflow: auto;
     scroll-padding-top: 7rem;
@@ -332,7 +334,7 @@ section{
 
 .footer{
     background: #111;
-    padding: 2rem 9%;
+    padding: 5rem 9% 0;
 }
 
 .footer .box-container{
@@ -372,21 +374,23 @@ section{
     font-size: 10pt;
 }
 
-.footer img{
-    transform: scale(0);
-    transition: 1s;
+.footer-text{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 15pt;
+    padding: 4rem 0 5px;
 }
 
-.footer a:hover img{
-    transform: scale(.8);
+.footer-text p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
 }
 
-.footer a div{
-    transition: 2s;
-}
-
-.footer a:hover div{
-    transform: scale(0);
+.footer-text p a{
+    font-size: 15pt;
+    color: #fff;
 }
 
 
