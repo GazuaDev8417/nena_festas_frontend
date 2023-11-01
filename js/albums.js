@@ -17,38 +17,28 @@ var swiper = new Swiper(".home-slider", {
     },
   })
 
-  /* const swiper = new Swiper('.home-slider', {
-    // Optional parameters
-    direction: 'horizontal',
-    effect: 'coverflow',
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  }); */
-
 
   
-    // Get all image elements in the slider
-    const images = document.querySelectorAll('.home-slider .swiper-slide')
-    images.forEach(image => {
-        image.addEventListener('click', function () {
-            image.style.transition = '1s'
-            image.style.transform = 'scale(2)'
-        })
-    })
-
+// Get all image elements in the slider
+  const images = document.querySelectorAll('.home-slider .swiper-slide')
+  let isLarged = false
+  
+  images.forEach(image => {
+    image.addEventListener('click', function () {
+      if(!isLarged){
+        image.style.transition = '1s'
+        image.style.transform = 'scale(2)'
+        
+        isLarged = true
+        }else{
+          image.style.transition = '1s'
+          image.style.transform = 'scale(1)'
+  
+          isLarged = false
+        }  
+      })
+  })
+  
+  
 
   
