@@ -290,7 +290,7 @@ section{
     padding-right: .5rem;
 }
 
-/* .contact form{
+.contact form{
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
@@ -330,7 +330,13 @@ section{
 
 .contact form textarea{
     resize: none;
-} */
+}
+
+.contact form .btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .footer{
     background: #111;
