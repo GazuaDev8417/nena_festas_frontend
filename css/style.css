@@ -202,6 +202,13 @@ section{
     line-height: 1.8;
 }
 
+.gallery .subtitle-price{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 5vh;
+}
+
 .gallery .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -244,7 +251,7 @@ section{
     top: 0;
 }
 
-.price .box-container{
+/* .price .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
@@ -271,7 +278,7 @@ section{
 .price .box-container .box .amount{
     color: #fff;
     padding-top: 2rem;
-    font-size: 4rem;
+    font-size: 1.5rem;
 }
 
 .price .box-container .box ul{
@@ -288,7 +295,7 @@ section{
 .price .box-container .box ul li i{
     color: var(--main-color);
     padding-right: .5rem;
-}
+} */
 
 .contact form{
     max-width: 70rem;
